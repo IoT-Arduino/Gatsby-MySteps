@@ -1,0 +1,228 @@
+/* Basic ******************** */
+
+body {
+  font-size:16px;
+  color: #333;
+  line-height: 1.9;
+  font-family: "メイリオ", sans-serif;
+}
+
+a{
+  color:#333;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+a:hover{
+  text-decoration: none;
+  opacity:0.7;
+}
+
+ul{
+  list-style:  none;  /* デフォルトのアイコンを消す */
+  margin:  0;         /* デフォルト指定上書き */
+  padding: 0;         /* デフォルト指定上書き */
+}
+
+.container{
+    max-width:1020px;
+    margin:3rem auto;
+
+}
+
+
+
+/* Hero Section ******************** */
+
+
+
+.jumbo-container{
+  position:relative;
+  max-width:1020px;
+  margin:0 auto;
+}
+
+.jumbo-text{
+  position:absolute;
+  top:120px;
+  left:1%;
+  width:370px;
+  color:#fff;
+  font-weight:700;
+  padding:0 1px;
+  background-color:rgba(0,0,0,0.02);
+  opacity:1;
+
+  font-weight:700;
+  color: #fff;
+  text-shadow:1px 1px 0 #777, -1px -1px 0 #777,
+              -1px 1px 0 #777, 1px -1px 0 #777,
+              0px 1px 0 #777,  0-1px 0 #777,
+              -1px 0 0 #777, 1px 0 0 #777;
+
+
+
+}
+
+/* Pickup Article Section ******************** */
+
+.panelTitle{
+  margin:10px 15px 25px;
+  color:#444;
+}
+
+
+.pickList{
+  padding:0;
+}
+
+.pickItem{
+  display:flex;
+}
+
+.pickItemImage{
+  margin:5px 0 auto;
+  height:auto;
+  object-fit: cover;
+  width:100%;
+  flex-basis: 25%;
+}
+
+.pickItemText{
+  flex-basis: 75%;
+  padding:0 15px 5px;
+}
+
+
+.pickItem a{
+  color:#444;
+}
+
+
+.panel-body .row img{
+  margin-top:20px;
+  max-width:120px;
+}
+
+.panel-body .row i{
+  margin-top:20px;
+  max-width:120px;
+} 
+
+/* side area ******************** */
+
+.widgetBox{
+  margin:20px 15px;
+}
+
+
+
+
+/* content region1 ******************** */
+
+
+ 
+  .contentRegion1{
+    margin-top:30px;
+    max-width:1020px;
+    margin:3rem auto;
+    background-color:#0faf97;
+    color:white;
+    text-align:center;
+
+    h2{
+      padding:10px;
+      margin:20px 0 10px;
+    }
+
+    p{
+      margin-bottom:30px;
+    }
+  }
+  
+
+.blockWrapper{
+  margin:1rem;
+}
+
+  .block{
+    border:#ccc solid 1px;
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+    margin:1rem auto;
+    display:flex;
+    flex-direction:column;
+    height:250px;
+  }
+  
+  .block a{
+    text-decoration: none;
+    overflow:visible;
+  }
+  
+  .block h3:hover, .block i:hover{
+    color:#777;
+  }
+  
+  .block h3{
+    color:#0faf97;
+  }
+  
+  .fa{
+    color:#0faf97;
+  }
+  
+  .fa-3{
+    font-size: 4em !important;
+  }
+  
+  .block p{
+    font-size:16px;
+    line-height:1.5;
+  }
+  
+
+
+
+
+/* content region2 ******************** */
+
+
+.contentRegion2{
+    margin:20px;
+    padding:20px 35px 30px 30px;
+    background-color:#f4f4f4;
+  }
+
+.region2Img{
+  margin:20px 10px;
+}
+
+.listGroupItem {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width:100%;
+}
+
+
+
+/* footet ******************** */
+
+.footer{
+    padding: 20px;
+    color: #0faf97;
+    background-color:#000000;
+
+}
+
+.footerRow{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.footerCopy{
+  padding: 20px;
+  margin:20px;
+}

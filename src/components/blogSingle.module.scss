@@ -1,0 +1,42 @@
+//Post Lists 
+
+.postsList{
+display:flex;
+border-bottom:solid 1px #444;
+margin:1.5rem 0;
+
+}
+    
+@media screen and (max-width:568px){
+    .postsList{
+        display:block;
+    }
+}
+
+.postTitle{
+    font-size:1.5rem;
+    font-weight:600;
+    text-decoration: none;
+}
+
+.postImage{
+margin:5px 0 auto;
+height:auto;
+object-fit: cover;
+width:100%;
+flex-basis: 25%;
+}
+
+.postText{
+flex-basis: 75%;
+padding:0 15px 5px;
+}
+
+.catLink{
+font-size:0.8rem;
+background-color:#41b8a6;
+color:#fff;
+padding:3px 10px;
+border-radius:5px;
+margin-right:10px;
+}
