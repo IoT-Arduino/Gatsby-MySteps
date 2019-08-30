@@ -86,19 +86,11 @@ const tuts = () => {
             <FontAwesomeIcon icon={faDesktop}  style={{color:"#0FAF97",fontSize:"3rem"}} />
               <h3>TechNews</h3>
             </Link>
-              <p>TechNews（To be Created）</p>
+              <p>TechNews&Tutorials</p>
             </div>
           </div>
 
-          <div className="col-sm-6 col-lg-4">
-          <div className={styles.block}>
-          <Link to="/tuts/inputSearch">
-          <FontAwesomeIcon icon={faDesktop}  style={{color:"#0FAF97",fontSize:"3rem"}} />
-            <h3>InputSearch</h3>
-          </Link>
-            <p>InputSearch（To be Created）</p>
-          </div>
-          </div>
+
 
   
         </section>
