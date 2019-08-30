@@ -133,9 +133,13 @@ class javascript extends React.Component {
 export const pageQuery = graphql`
     
 query{
-    allAirtable(filter: {table: {eq: "03_JavaScript&API"}},
-      sort: {fields: data___PublishedDate, order: DESC}
-    ) {
+  allAirtable(
+    filter: {
+      table: {eq: "03_JavaScript&API"}, 
+      data: {Title: {ne: null}}
+    }, 
+    sort: {fields: data___PublishedDate, order: DESC}
+  ) {
       edges {
         node {
           id

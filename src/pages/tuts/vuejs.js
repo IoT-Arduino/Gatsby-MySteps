@@ -136,9 +136,13 @@ class vuejs extends React.Component {
 export const pageQuery = graphql`
     
 query{
-    allAirtable(filter: {table: {eq: "02_VueJs"}},
-      sort: {fields: data___PublishedDate, order: DESC}
-    ) {
+  allAirtable(
+    filter: {
+      table: {eq: "02_VueJs"}, 
+      data: {Title: {ne: null}}
+    }, 
+    sort: {fields: data___PublishedDate, order: DESC}
+  ) {
       edges {
         node {
           id

@@ -127,9 +127,13 @@ class htmlCss extends React.Component {
 export const pageQuery = graphql`
     
 query{
-    allAirtable(filter: {table: {eq: "05_CSS-jQuery"}},
-      sort: {fields: data___PublishedDate, order: DESC}
-    ) {
+  allAirtable(
+    filter: {
+      table: {eq: "05_CSS-jQuery"}, 
+      data: {Title: {ne: null}}
+    }, 
+    sort: {fields: data___PublishedDate, order: DESC}
+  ) {
       edges {
         node {
           id

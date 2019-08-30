@@ -132,9 +132,13 @@ class Wordpress extends React.Component {
 export const pageQuery = graphql`
     
 query{
-    allAirtable(filter: {table: {eq: "04_WordPress"}},
-      sort: {fields: data___PublishedDate, order: DESC}
-    ) {
+  allAirtable(
+    filter: {
+      table: {eq: "04_WordPress"}, 
+      data: {Title: {ne: null}}
+    }, 
+    sort: {fields: data___PublishedDate, order: DESC}
+  ) {
       edges {
         node {
           id

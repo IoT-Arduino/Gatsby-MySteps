@@ -17,7 +17,11 @@ const airtable = () => {
     const data = useStaticQuery(graphql`
     
     query{
-      allAirtable(filter: {table: {eq: "03_JavaScript&API"}},
+      allAirtable(
+        filter: {
+          table: {eq: "03_JavaScript&API"}, 
+          data: {Title: {ne: null}}
+        }, 
         sort: {fields: data___PublishedDate, order: DESC}
       ) {
         edges {
@@ -48,16 +52,13 @@ const airtable = () => {
           }
         }
       }
-    }   
-    
+
+    }     
     `)
     
    
     const [text, setText] = useState('')
        
-    console.log(data.allAirtable.edges[0]);
- 
-
     return (
         
         <Layout>
@@ -66,13 +67,13 @@ const airtable = () => {
             <div>
               <input onChange={event => setText(event.target.value)} value={text} />
             </div>
-           
+                
             <Grid container>
             {data.allAirtable.edges
                 //item.node.id.includes(text) は動く、　
                 // item.node.data.Title.includes(text) は動かない　nullがある。なぜ？
                 // error msg : TypeError: Cannot read property 'includes' of null
-                //　GraphQLを修正したら、エラーが消えた。
+                //　GraphQLを修正したら、エラーが消えた。(AirTableでブランク行があるとまずい)
                 // 今後　Titleだけではなくて、Title+Descriptionのデータから検索したい。
                 // case sensitive をなくしたい。　2019/8/14　>> 8/19 ok : 検索は単語ベース、フレーズNG
 

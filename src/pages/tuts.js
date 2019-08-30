@@ -100,17 +100,6 @@ const tuts = () => {
           </div>
           </div>
 
-          <div className="col-sm-6 col-lg-4">
-          <div className={styles.block}>
-          <Link to="/tuts/test">
-          <FontAwesomeIcon icon={faDesktop}  style={{color:"#0FAF97",fontSize:"3rem"}} />
-            <h3>Test</h3>
-          </Link>
-            <p>Test（To be Created）</p>
-          </div>
-          </div>
-
-
   
         </section>
        </div>

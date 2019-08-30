@@ -132,9 +132,13 @@ class techNews extends React.Component {
 export const pageQuery = graphql`
     
 query{
-    allAirtable(filter: {table: {eq: "06_TechNews"}},
-      sort: {fields: data___PublishedDate, order: DESC}
-    ) {
+  allAirtable(
+    filter: {
+      table: {eq: "06_TechNews"}, 
+      data: {Title: {ne: null}}
+    }, 
+    sort: {fields: data___PublishedDate, order: DESC}
+  ) {
       edges {
         node {
           id

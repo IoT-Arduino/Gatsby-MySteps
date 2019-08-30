@@ -137,9 +137,13 @@ import Typography from '@material-ui/core/Typography'
 export const pageQuery = graphql`
     
 query{
-    allAirtable(filter: {table: {eq: "01_React&Gatsby"}},
-      sort: {fields: data___PublishedDate, order: DESC}
-    ) {
+  allAirtable(
+    filter: {
+      table: {eq: "01_React&Gatsby"}, 
+      data: {Title: {ne: null}}
+    }, 
+    sort: {fields: data___PublishedDate, order: DESC}
+  ) {
       edges {
         node {
           id
