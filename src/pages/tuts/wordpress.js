@@ -92,7 +92,7 @@ class Wordpress extends React.Component {
                     {edges.node.data.Title}
                 </Typography>
                 <Typography component="p" style={{marginBottom:'10px'}} >
-                    {edges.node.data.Description.substr(0,100)}...
+                "{edges.node.data.Description.substr(0,100)} ..."
                 </Typography>
                 <Typography component="p">
                 {edges.node.data.Channel}
