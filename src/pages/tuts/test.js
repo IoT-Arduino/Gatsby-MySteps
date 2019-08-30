@@ -14,7 +14,8 @@ import Head from '../../components/Head'
       selectedOption: null,
       checkbox:[],
       isLoading:true,
-      button:[]
+      button:[],
+      description:null
       }
       this.handleCheckbox = this.handleCheckbox.bind(this)
       this.button = this.button.bind(this)
@@ -55,15 +56,19 @@ import Head from '../../components/Head'
     // youtube api から、descriptionテキストデータを取得する
     // console.logまではデータが取れた。これをretrunしたいがうまくいかない。
     // apiの回数制限注意。
-    //　apiキーの取り扱い注意。定数化して、.envに取り込む。
-
-
     fetchDescription(root){
-
       fetch(root, { method:"GET"})
       .then(response => response.json())
       // .then(json => console.log(json.items[0].snippet.description))
-      .then(json => {return json.items[0].snippet.description})
+      // .then(json => { return json.items[0].snippet.description })
+      .then(json => {
+        console.log(json)
+        // const ydesc = json.items[0].snippet.description;
+        // this.setState({
+        //   description:ydesc
+        // })
+        return  `${json.items[0].snippet.description}`;
+        })
     }
 
     //以下のコードを改良して、LocalStorageデータをとりだしたい。
@@ -150,8 +155,8 @@ import Head from '../../components/Head'
                        <h2><FaYoutube />{edges.node.data.Title}</h2> 
                        <p>{edges.node.data.Channel}</p>
                        <p>{edges.node.data.tag}</p>
-                       <p>{edges.node.data.description}</p>
-                   {/*   <p>{this.fetchDescription(edges.node.data.description)}</p>  */}              
+                       {/*<p>{edges.node.data.description}</p> */}
+                        <p>{this.fetchDescription(edges.node.data.description)}</p>          
                        <a href={edges.node.data.VideoUrl}>{edges.node.data.VideoUrl}</a>
                        <button onClick={this.button}>{edges.node.id}</button>
                        <p><input type="checkbox" name="mita" value="Unchecked" onChange={this.handleCheckbox}　id={edges.node.id} />Checked</p>

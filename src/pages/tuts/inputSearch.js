@@ -54,8 +54,7 @@ const airtable = () => {
     
    
     const [text, setText] = useState('')
-    
-    
+       
     console.log(data.allAirtable.edges[0]);
  
 
@@ -67,7 +66,7 @@ const airtable = () => {
             <div>
               <input onChange={event => setText(event.target.value)} value={text} />
             </div>
-
+           
             <Grid container>
             {data.allAirtable.edges
                 //item.node.id.includes(text) は動く、　
@@ -75,9 +74,9 @@ const airtable = () => {
                 // error msg : TypeError: Cannot read property 'includes' of null
                 //　GraphQLを修正したら、エラーが消えた。
                 // 今後　Titleだけではなくて、Title+Descriptionのデータから検索したい。
-                // case sensitive をなくしたい。　2019/8/14　
+                // case sensitive をなくしたい。　2019/8/14　>> 8/19 ok : 検索は単語ベース、フレーズNG
 
-              .filter(item => item.node.data.Title.includes(text))
+              .filter(item => item.node.data.Title.toLowerCase().includes(text.toLowerCase()))
               .map((edges) => {
                 return (
                   <Grid item xs={12} sm={6} md={4} style={{padding:24}}

@@ -9,6 +9,7 @@ import SideBar1 from '../components/SideBar1'
 import Pagination from '../components/CatPagination';
 
 import styles from './postList.module.scss'
+import Blogs from '../components/Blogs'
 
 const postListCat = ({
   data: { file, allContentfulBlogPost },
@@ -35,39 +36,7 @@ const postListCat = ({
 
   {console.log(allContentfulBlogPost.edges[0])}
 
-            <div>
-            {allContentfulBlogPost.edges.map(post => (
-              <div key={post.node.id}  
-              className={styles.postsList}>
-
-                <Image fluid={post.node.thumbnail.fluid} 
-                className={styles.postImage} />
-
-                <div className={styles.postText}>
-                  <Link 
-                  to={`/blog/${post.node.slug}/`}
-                  className={styles.postTitle}>
-                    {post.node.title}
-                  </Link>
-                  <p>
-                  <Link 
-                      to={`/blog/${post.node.catetory.catSlug}/`}
-                      className={styles.catLink}
-                      >
-                      {post.node.catetory.catTitle}</Link>
-                      {post.node.publishedDate}
-                  </p>
-                
-                  <p>{post.node.excerpt.substr(0,150)}</p>
-                </div>
-
-                <div className="dot_divider">
-                </div>
-
-              </div>
-            ))}
-          </div>
-
+          <Blogs blogs={allContentfulBlogPost.edges}/>
 
           <Pagination
             catSlug={catSlug}
@@ -84,8 +53,6 @@ const postListCat = ({
     </div>
   </Layout>
 )
-
-
 
 
 

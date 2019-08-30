@@ -7,6 +7,7 @@ import { graphql } from 'gatsby'
 import Head from '../components/Head'
 import SideBar1 from '../components/SideBar1'
 import Pagination from '../components/BlogPagination';
+import Blogs from '../components/Blogs'
 
 import styles from './postList.module.scss'
 
@@ -35,38 +36,9 @@ const postList = ({
 
   {console.log(allContentfulBlogPost.edges[0])}
 
-    <div>
-          {allContentfulBlogPost.edges.map(post => (
-            <article key={post.node.id}  
-             className={styles.postsList}>
 
-            <Image fluid={post.node.thumbnail.fluid} 
-            className={styles.postImage} />
 
-            <div className={styles.postText}>
-              <Link 
-              to={`/blog/${post.node.slug}/`}
-              className={styles.postTitle}>
-                {post.node.title}
-              </Link>
-              <p>
-               <Link 
-                   to={`/blog/${post.node.catetory.catSlug}/`}
-                   className={styles.catLink}
-                   >
-                   {post.node.catetory.catTitle}</Link>
-                   {post.node.publishedDate}
-              </p>
-             
-              <p>{post.node.excerpt.substr(0,150)}</p>
-            </div>
-
-            <div className="dot_divider">
-            </div>
-
-            </article>
-          ))}
-    </div>
+    <Blogs blogs={allContentfulBlogPost.edges}/>
 
         <Pagination
           page={humanPageNumber}

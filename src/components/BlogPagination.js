@@ -25,7 +25,7 @@ const BlogPagination = ({ page , totalPages }) => (
 
         {page < totalPages ? (
           <Link 
-           to={`/blog/${page + 1}/`}
+           to={`/blog/page/${page + 1}/`}
            className={styles.paginationBtn}
            >
             Next
