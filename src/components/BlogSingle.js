@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'gatsby-image'
 import { Link } from 'gatsby'
-import styles from './blogSingle.module.scss'
+import styles from './styles/blogSingle.module.scss'
 
 
 const blogSingle = ({blog}) => {

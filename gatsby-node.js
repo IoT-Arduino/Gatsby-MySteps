@@ -1,8 +1,6 @@
 const path = require('path');
 const slash = require('slash');
 const { paginate } = require('gatsby-awesome-pagination');
-// const _ = require('lodash')
-
 
 
 module.exports.createPages = async ({ graphql, actions }) => {
@@ -61,8 +59,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
       const filteredPosts = allContentfulBlogPost.edges.filter(
         el =>
         el.node.catetory.catSlug === catEdge.node.catSlug        
-        // ({ node: { catetory } }) => 
-        //   catetory.some(el => el.catSlug === catEdge.node.catSlug)
       );
 
       if(filteredPosts.length>0) {        
@@ -95,8 +91,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
           component: blogPostTemplate,
           context: {
             slug: edge.node.slug,
-            // Can not pass context to the blogSingle Page now
-            // relatedArticles:getRelatedArticles(edge.node, allContentfulBlogPost.edges),
           },
         });
 
@@ -112,15 +106,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
           items:posts,
           itemsPerPage:5,
           component: postListTemplate,
-          // pathPrefix:`/blog`,
           pathPrefix:pathPrefix
-          // context:{
-          //   catId: posts.node.id,
-          //   catName: posts.node.Title,
-          //   catSlug: posts.node.catSlug,
-          //   catCount: posts.node.count,
-          //   categories: allContentfulCategory.edges,
-          // }
         })
 
 

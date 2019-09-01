@@ -7,7 +7,6 @@ import Head from '../components/Head'
 const categories = () => {
     
     const res = useStaticQuery(graphql`
-
      
     query{
         allContentfulCategory{

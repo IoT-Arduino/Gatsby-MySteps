@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styles from './TutsHeader.module.scss'
+import styles from './styles/TutsHeader.module.scss'
 
 const TutsHeader = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby';
 
-import styles from './catPagination.module.scss'
+import styles from './styles/catPagination.module.scss'
 
 const CatPagination = ({ catSlug, page , totalPages }) => (
 

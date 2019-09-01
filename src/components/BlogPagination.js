@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby';
 
-import styles from './blogPagination.module.scss'
+import styles from './styles/blogPagination.module.scss'
 
 const BlogPagination = ({ page , totalPages }) => (
 

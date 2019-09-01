@@ -6,7 +6,7 @@ import Head from '../components/Head'
 import SideBar1 from '../components/SideBar1'
 import Pagination from '../components/CatPagination';
 
-import styles from './postList.module.scss'
+import styles from './styles/postList.module.scss'
 import Blogs from '../components/Blogs'
 
 const postListCat = ({

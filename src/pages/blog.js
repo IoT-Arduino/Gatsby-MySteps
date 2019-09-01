@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/Layout'
 
 import { Link,graphql } from 'gatsby'
-// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import styles from './blog.module.scss'
 import Head from '../components/Head'
@@ -11,8 +10,6 @@ import Blogs from '../components/Blogs'
 
 
 const BlogPage = ({data}) => {
-
-  　console.log(data)
 
     return(
         <Layout>

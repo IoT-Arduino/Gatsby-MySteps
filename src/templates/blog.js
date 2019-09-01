@@ -3,7 +3,7 @@ import { Link,graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Image from 'gatsby-image'
 
-import styles from './blog.module.scss'
+import styles from './styles/blog.module.scss'
 import Layout from "../components/Layout"
 import Head from '../components/Head'
 
@@ -100,9 +100,6 @@ const Blog = props => {
          Related Articles
         </h4>
          </div>
-
-         {console.log(newRelatedArticles[0])}
-
 
         <div className={styles.relatedArticles}>     
         {newRelatedArticles.map(({node}) =>  

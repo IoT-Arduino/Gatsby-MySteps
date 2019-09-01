@@ -1,6 +1,6 @@
 import React from 'react'
 import BackgroundImage from 'gatsby-background-image'
-import styles from './styledHero.module.scss'
+import styles from './styles/styledHero.module.scss'
 
 const StyledHero = ({img,children}) => {
     return (

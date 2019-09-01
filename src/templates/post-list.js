@@ -7,7 +7,7 @@ import SideBar1 from '../components/SideBar1'
 import Pagination from '../components/BlogPagination';
 import Blogs from '../components/Blogs'
 
-import styles from './postList.module.scss'
+import styles from './styles/postList.module.scss'
 
 const postList = ({
   data: { file, allContentfulBlogPost },

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link,graphql,useStaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
-import styles from './header.module.scss'
+import styles from './styles/header.module.scss'
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -24,18 +24,6 @@ const Header = () => {
     } 
         
     `)
-
-    // const isPartiallyActive = ({
-    //     isPartiallyCurrent
-    //   }) => {
-    //     return isPartiallyCurrent
-    //       ? { className: "activeClassName" }
-    //       : null
-    //   }
-
-    //   const PartialNavLink = props => (
-    //     <Link getProps={isPartiallyActive} {...props} />
-    //   )
 
     return (
         <header className={styles.header}>

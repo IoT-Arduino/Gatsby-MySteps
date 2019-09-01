@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './sidebar1.module.scss'
+import styles from './styles/sidebar1.module.scss'
 import { Link,graphql,useStaticQuery } from 'gatsby'
 
 const SideBar1 = () => {
