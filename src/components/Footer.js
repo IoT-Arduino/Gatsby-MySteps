@@ -26,8 +26,10 @@ const Footer = () => {
             <div className="col-sm-4">
                 <h4>Social</h4>
             <ul>
-                <li>Twiter:<a href="/">Twitter</a></li>
-                <li>GitHub:<a href="/">GitHub</a></li>
+                <li>Twiter:<a href="/" target="_blank"
+                rel="noopener noreferrer">Twitter</a></li>
+                <li>GitHub:<a href="/" target="_blank"
+                rel="noopener noreferrer">GitHub</a></li>
             </ul>
             </div>
 
@@ -42,8 +44,9 @@ const Footer = () => {
             <div className="col-sm-4">
                 <h4>About</h4>
                 <ul>
-                    <li><Link to="/contact">Contact</Link></li>
-                    <li><a href="/">Sitemap</a></li>
+                    <li><a href="/">Contact</a></li>
+                    <li><a href="/" target="_blank"
+                    rel="noopener noreferrer">Sitemap</a></li>
                 </ul>
             </div>
         

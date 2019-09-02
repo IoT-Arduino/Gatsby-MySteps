@@ -268,7 +268,7 @@ const IndexPage = ({data}) => {
         <div className="col-sm-4">
             <h4>About</h4>
             <ul>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><a href="/">Sitemap</a></li>
               <li><a href="/">Sitemap</a></li>
             </ul>
         </div>
