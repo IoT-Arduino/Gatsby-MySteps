@@ -31,8 +31,6 @@ const postListCat = ({
 
     <div className={styles.wrapper}>
       <div className={styles.mainContents}>
-        {console.log(allContentfulBlogPost.edges[0])}
-
         <Blogs blogs={allContentfulBlogPost.edges} />
 
         <Pagination
