@@ -27,6 +27,7 @@ Some pages are created with Airtable.
 * [gatsby-source-airtable](https://www.gatsbyjs.org/packages/gatsby-source-airtable/)
 * [gatsby-source-contentful](https://www.gatsbyjs.org/packages/gatsby-source-contentful/?=contentful)
 * [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet)
+* [gatsby-plugin-twitter](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-twitter)
 
 
 
