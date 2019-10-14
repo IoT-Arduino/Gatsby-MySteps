@@ -98,6 +98,13 @@ module.exports = {
         ]
       }
      },
+     {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: process.env.googleAnalyticsID
+      }
+    },
      'gatsby-plugin-twitter',
+
   ]
 }
