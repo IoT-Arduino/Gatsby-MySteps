@@ -46,7 +46,7 @@ const Header = () => {
                     <Link className={styles.navItem} 
                     activeClassName={styles.activeNavItem} 
                     partiallyActive={true}
-                    to="/blog">Blog</Link>
+                    to="/blogs">Blog</Link>
               
                     </li>
 

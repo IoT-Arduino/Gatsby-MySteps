@@ -6,7 +6,7 @@ import styles from "./index.module.scss"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWordpress,faReact,faVuejs,faJsSquare } from "@fortawesome/free-brands-svg-icons"
-import { faDesktop,faFileCode } from '@fortawesome/free-solid-svg-icons'
+import { faDesktop,faFileCode,faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 const tuts = () => {
     return (
@@ -38,6 +38,15 @@ const tuts = () => {
         </Link>
           <p>React&Gatsby Tutorial Information</p>
         </div>
+
+        <Link to="/tuts/reaGatsby">
+        <div className={styles.blockMask}>
+          <div className={styles.blockCaption}>
+            <FontAwesomeIcon icon={faArrowCircleRight}   />
+          </div>
+        </div>
+      </Link>
+
         </div>
       
         <div className="col-sm-6 col-lg-4">
@@ -48,6 +57,15 @@ const tuts = () => {
             </Link>
             <p>VueJs&Gridsome Tutorial Information</p>
           </div>
+
+          <Link to="/tuts/vuejs">
+          <div className={styles.blockMask}>
+            <div className={styles.blockCaption}>
+              <FontAwesomeIcon icon={faArrowCircleRight}   />
+            </div>
+          </div>
+        </Link>
+
         </div>
   
         <div className="col-sm-6 col-lg-4">
@@ -58,6 +76,15 @@ const tuts = () => {
           </Link>
             <p>Opensource ContentsManagementSystem(CMS).Initial Version Released in Jul2003.</p>
           </div>
+
+          <Link to="/tuts/wordpress">
+          <div className={styles.blockMask}>
+            <div className={styles.blockCaption}>
+              <FontAwesomeIcon icon={faArrowCircleRight}   />
+            </div>
+          </div>
+        </Link>
+
         </div>
   
         <div className="col-sm-6 col-lg-4">
@@ -68,6 +95,15 @@ const tuts = () => {
           </Link>
             <p>JavaScript&jQuery Tutorial Information</p>
           </div>
+
+          <Link to="/tuts/javascript">
+          <div className={styles.blockMask}>
+            <div className={styles.blockCaption}>
+              <FontAwesomeIcon icon={faArrowCircleRight}   />
+            </div>
+          </div>
+        </Link>
+
         </div>
   
         <div className="col-sm-6 col-lg-4">
@@ -78,6 +114,15 @@ const tuts = () => {
             </Link>
               <p>HTML&CSS Tutorial Information</p>
             </div>
+
+            <Link to="/tuts/htmlCss">
+            <div className={styles.blockMask}>
+              <div className={styles.blockCaption}>
+                <FontAwesomeIcon icon={faArrowCircleRight}   />
+              </div>
+            </div>
+          </Link>
+
           </div>
   
           <div className="col-sm-6 col-lg-4">
@@ -88,6 +133,15 @@ const tuts = () => {
             </Link>
               <p>TechNews&Tutorials</p>
             </div>
+
+            <Link to="/tuts/techNews">
+            <div className={styles.blockMask}>
+              <div className={styles.blockCaption}>
+                <FontAwesomeIcon icon={faArrowCircleRight}   />
+              </div>
+            </div>
+            </Link>
+
           </div>
 
 

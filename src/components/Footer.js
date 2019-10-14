@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link,graphql,useStaticQuery } from 'gatsby'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter,faGithub } from "@fortawesome/free-brands-svg-icons"
 import footerStyles from './styles/footer.module.scss'
 
 const Footer = () => {
@@ -25,11 +26,9 @@ const Footer = () => {
         
             <div className="col-sm-4">
                 <h4>Social</h4>
-            <ul>
-                <li>Twiter:<a href="/" target="_blank"
-                rel="noopener noreferrer">Twitter</a></li>
-                <li>GitHub:<a href="/" target="_blank"
-                rel="noopener noreferrer">GitHub</a></li>
+                <ul>
+                <li>Twiter: <a href="https://twitter.com/DengenT?lang=ja"><FontAwesomeIcon icon={faTwitter}  style={{color:"#777",fontSize:"1rem"}} /></a></li>
+                <li>GitHub: <a href="https://github.com/IoT-Arduino"><FontAwesomeIcon icon={faGithub}  style={{color:"#777",fontSize:"1rem"}} /></a></li>
             </ul>
             </div>
 
@@ -54,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center">
-        <p>Created by {data.site.siteMetadata.author},(c)copy 2019</p></div>
+        <p>Created by {data.site.siteMetadata.author}, (c)copy 2019</p></div>
 
         </footer>
     

@@ -130,8 +130,16 @@ h1.h1{
   }
 
   .relatedItems{
-    margin:0 10px;
+    margin:10px 10px;
     display:flex;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .relatedItems:hover{
+    transform: scale(1.02, 1.02);
   }
 
   @media screen and (max-width:568px){
@@ -149,6 +157,7 @@ h1.h1{
 
   .relatedTexts{
     flex:1 1 500px;
+    padding:10px;
   }
 
   .relatedLink{

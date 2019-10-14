@@ -10,8 +10,8 @@ import SideBar1 from '../components/SideBar1'
 
 import styles from "./index.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWordpress,faReact,faVuejs,faJsSquare } from "@fortawesome/free-brands-svg-icons"
-import { faDesktop,faFileCode } from '@fortawesome/free-solid-svg-icons'
+import { faWordpress,faReact,faVuejs,faJsSquare,faTwitter,faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faDesktop,faFileCode,faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 
 export const query = graphql`
@@ -101,9 +101,9 @@ const IndexPage = ({data}) => {
                  <li key={edge.node.title} className={styles.pickList} >
                   <Link to={`/blog/${edge.node.slug}`} className={styles.pickItem}>
       　            <Image fluid={edge.node.thumbnail.fluid} className={styles.pickItemImage}/>
-                    <div className={styles.pickItemText}>
-                      <h4>{edge.node.title}</h4> 
-                      <p>{edge.node.excerpt.substr(0,100)}...</p>
+                    <div className={styles.pickItemDesc}>
+                      <h4 className={styles.pickItemDescTitle}>{edge.node.title}</h4> 
+                      <p className={styles.pickItemDescText}>{edge.node.excerpt.substr(0,100)}...</p>
                     </div>
                   </Link>                 
                  </li>
@@ -156,10 +156,19 @@ const IndexPage = ({data}) => {
       <div className={styles.block}>
       <Link to="/tuts/reaGatsby">
       <FontAwesomeIcon icon={faReact}  style={{color:"#0FAF97",fontSize:"3rem"}} />
-        <h3>React<br />Gatsby</h3>
+        <h3 className={styles.blockTitle}>React<br />Gatsby</h3>
       </Link>
-        <p>React&Gatsby Tutorial Information</p>
+        <p className={styles.blockText}>React&Gatsby Tutorial Information</p>
       </div>
+
+      <Link to="/tuts/reaGatsby">
+        <div className={styles.blockMask}>
+          <div className={styles.blockCaption}>
+            <FontAwesomeIcon icon={faArrowCircleRight}   />
+          </div>
+        </div>
+      </Link>
+
       </div>
     
       <div className="col-sm-6 col-lg-4">
@@ -170,6 +179,15 @@ const IndexPage = ({data}) => {
           </Link>
           <p>VueJs&Gridsome Tutorial Information</p>
         </div>
+
+        <Link to="/tuts/vuejs">
+          <div className={styles.blockMask}>
+            <div className={styles.blockCaption}>
+              <FontAwesomeIcon icon={faArrowCircleRight}   />
+            </div>
+          </div>
+        </Link>
+
       </div>
 
       <div className="col-sm-6 col-lg-4">
@@ -180,6 +198,15 @@ const IndexPage = ({data}) => {
         </Link>
           <p>Opensource ContentsManagementSystem(CMS).Initial Version Released in Jul2003.</p>
         </div>
+
+        <Link to="/tuts/wordpress">
+          <div className={styles.blockMask}>
+            <div className={styles.blockCaption}>
+              <FontAwesomeIcon icon={faArrowCircleRight}   />
+            </div>
+          </div>
+        </Link>
+
       </div>
 
       <div className="col-sm-6 col-lg-4">
@@ -190,6 +217,15 @@ const IndexPage = ({data}) => {
         </Link>
           <p>JavaScript&jQuery Tutorial Information</p>
         </div>
+
+        <Link to="/tuts/javascript">
+          <div className={styles.blockMask}>
+            <div className={styles.blockCaption}>
+              <FontAwesomeIcon icon={faArrowCircleRight}   />
+            </div>
+          </div>
+        </Link>
+
       </div>
 
       <div className="col-sm-6 col-lg-4">
@@ -200,6 +236,15 @@ const IndexPage = ({data}) => {
           </Link>
             <p>HTML&CSS Tutorial Information</p>
           </div>
+
+          <Link to="/tuts/htmlCss">
+            <div className={styles.blockMask}>
+              <div className={styles.blockCaption}>
+                <FontAwesomeIcon icon={faArrowCircleRight}   />
+              </div>
+            </div>
+          </Link>
+
         </div>
 
         <div className="col-sm-6 col-lg-4">
@@ -210,6 +255,15 @@ const IndexPage = ({data}) => {
           </Link>
             <p>TechNews（To be Created）</p>
           </div>
+
+          <Link to="/tuts/techNews">
+          <div className={styles.blockMask}>
+            <div className={styles.blockCaption}>
+              <FontAwesomeIcon icon={faArrowCircleRight}   />
+            </div>
+          </div>
+          </Link>
+          
         </div>
 
       </section>
@@ -251,8 +305,8 @@ const IndexPage = ({data}) => {
         <div className="col-sm-4">
             <h4>Social</h4>
             <ul>
-                <li>Twiter:<a href="/">Twitter</a></li>
-                <li>GitHub:<a href="/">GitHub</a></li>
+                <li>Twiter: <a href="https://twitter.com/DengenT?lang=ja"><FontAwesomeIcon icon={faTwitter}  style={{color:"#0FAF97",fontSize:"1rem"}} /></a></li>
+                <li>GitHub: <a href="https://github.com/IoT-Arduino"><FontAwesomeIcon icon={faGithub}  style={{color:"#0FAF97",fontSize:"1rem"}} /></a></li>
             </ul>
         </div>
 

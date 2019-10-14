@@ -28,6 +28,8 @@ Some pages are created with Airtable.
 * [gatsby-source-contentful](https://www.gatsbyjs.org/packages/gatsby-source-contentful/?=contentful)
 * [gatsby-plugin-react-helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet)
 * [gatsby-plugin-twitter](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-twitter)
+* [BootStrap3](https://getbootstrap.com/docs/3.3/)
+* [react-fontawesome](https://www.npmjs.com/package/@fortawesome/react-fontawesome)
 
 
 
