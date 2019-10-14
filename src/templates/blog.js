@@ -87,8 +87,15 @@ const Blog = props => {
       <div className={styles.wrapper}>
 
       <h1 className={styles.h1}>{props.data.contentfulBlogPost.title}</h1>
-      <p>{props.data.contentfulBlogPost.catetory.catTitle}</p>
-      <p>{props.data.contentfulBlogPost.publishedDate}</p>
+
+      <p className={styles.catDate}>
+        <Link 
+        to={`/blog/${props.data.contentfulBlogPost.catetory.catSlug}/`}
+        className={styles.catLink}
+        >
+        {props.data.contentfulBlogPost.catetory.catTitle}</Link>
+        {props.data.contentfulBlogPost.publishedDate}
+      </p>
 
       <div className={styles.contents}>
       {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}

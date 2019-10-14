@@ -32,10 +32,11 @@ import PageGrid from '../../components/PageGrid'
       // console.log(`Set state Null:`, this.state);
     };
 
+
+
     render() {
       const { data } = this.props
       const { selectedOption } = this.state;
-
 
       //　get select option from airtable master and make it array(object)
       const selectValue =     

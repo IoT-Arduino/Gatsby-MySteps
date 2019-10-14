@@ -127,10 +127,10 @@ const IndexPage = ({data}) => {
     </div>
 
     <div className="col-md-8 col-lg-12">
-    <div className={styles.widgetBox}>
-      TwitterWidget
-    </div>
-  
+      <div className={styles.widgetBox}>
+        <a class="twitter-timeline" href="https://twitter.com/DengenT?ref_src=twsrc%5Etfw" data-width="100%" data-height="380">Twitter</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     
     </div>
     </div>
