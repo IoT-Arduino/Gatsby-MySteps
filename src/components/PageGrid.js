@@ -9,12 +9,23 @@ import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
 
 const PageGrid = ({ grids }) => {
+
+  //use static image file in case of no API image retirived
+  let imageThumbnail = grids.node.data.Thumbnail
+  if (grids.node.data.Thumbnail == 'Other'){
+    imageThumbnail = '../../pic1.jpg'
+  } else if (grids.node.data.Thumbnail == 'Udemy'){
+    imageThumbnail = '../../udemy.jpg'
+  } else {
+    imageThumbnail = grids.node.data.Thumbnail
+  }
+ 
   return (
     <Grid item xs={12} sm={6} md={4} style={{ padding: 24 }}>
       <Card>
         <CardMedia
           style={{ height: 0, paddingTop: "56.25%" }}
-          image={grids.node.data.Thumbnail}
+          image={imageThumbnail}
           title={grids.node.data.Title}
         />
 
