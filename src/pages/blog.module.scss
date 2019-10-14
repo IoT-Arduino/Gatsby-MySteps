@@ -1,128 +1,113 @@
-.h1Wrapper{
-    max-width:1020px;
-    margin:0 auto;
-    padding:0 0.5rem;
+.h1Wrapper {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
 }
 
-h1.h1{ 
-    padding:1rem;
-    color: #fff;/*文字色*/
-    background: #0faf97;/*背景色*/
-    font-weight:500;
-    border-bottom:6px #ddd solid;
-    border-radius:2px;
-    font-size:2rem;
+h1.h1 {
+  padding: 1rem;
+  color: #fff;
+  background: #0faf97;
+  font-weight: 500;
+  border-bottom: 6px #ddd solid;
+  border-radius: 2px;
+  font-size: 2rem;
 }
 
 /*contents layout setting */
 
-.wrapper{
-    display:block;
-    max-width:1020px;
-    margin:0 auto;
-    padding:1rem 1rem 2rem;
-    width:100%;
+.wrapper {
+  display: block;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem;
+  width: 100%;
 }
 
- 
-  .main-contents{
-    margin:20px 15px 20px 15px;
+.main-contents {
+  margin: 20px 15px 20px 15px;
+}
+
+.sideWidget {
+  display: block;
+  margin: 10px 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .wrapper {
+    display: flex;
+    max-width: 1020px;
   }
-      
-  
-  .sideWidget{
-    display:block;
-    margin:10px 10px;
-  
+
+  .main-contents {
+    flex: 1 0 70%;
   }
-  
-  @media screen and (min-width:992px){
-  
-    .wrapper{
-      display:flex;
-      max-width:1020px;
-    }
-  
-    .main-contents{
-      flex:1 0 70%;
-  
-    }
-  
-    .sideWidget{
-      flex:0 1 30%;
-      display:flex;
-      flex-direction:row;
-      flex-wrap:wrap;
-      justify-content: flex-end;
-      margin:10px auto;
-      min-height:600px;
-      height:100%;
-    }
-  
-  }
-  
-  @media screen and (min-width:768px){
-  
-  
-  .sideWidget{
-    display:flex;
-    margin:20px 10px;
-  }
-  
-  .sideWidget-category{
-   flex:1 1 40%;
-   margin:20px 10px;
-  }
-  
-  .sideWidget-twitter{
-    flex:1 0 60%;
-    margin:20px 10px;
+
+  .sideWidget {
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 10px auto;
+    min-height: 600px;
+    height: 100%;
   }
 }
-  
+
+@media screen and (min-width: 768px) {
+  .sideWidget {
+    display: flex;
+    margin: 20px 10px;
+  }
+
+  .sideWidget-category {
+    flex: 1 1 40%;
+    margin: 20px 10px;
+  }
+
+  .sideWidget-twitter {
+    flex: 1 0 60%;
+    margin: 20px 10px;
+  }
+}
+
 // end contents layout setting
 
-
-
-
-.posts{
-    list-style-type: none;
-    margin:0;
+.posts {
+  list-style-type: none;
+  margin: 0;
 }
 
+.post {
+  margin: 1rem 0;
+  border-bottom: solid 1px #444;
+  a {
+    color: #444;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+  }
 
-.post{
-    margin:1rem 0;
-    border-bottom:solid 1px #444;
-        a {
-            color:#444;
-            display:block;
-            padding:1rem;
-            text-decoration: none;
-        }
+  a:hover {
+    background: #e4e4e4;
+  }
 
-        a:hover{
-            background:#e4e4e4;
-        }
+  h2 {
+    margin-bottom: 0;
+  }
 
-        h2 {
-            margin-bottom:0;
-        }
-
-        p{
-            font-size:0.8rem;
-            font-style:italic;
-            margin:0.8rem;
-        }
-
-
+  p {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 0.8rem;
+  }
 }
 
-
-.pagination{
-  margin:20px 0 0 90%;
+.pagination {
+  margin: 20px 0 0 90%;
   text-align: right;
-  border:1px solid #333;
-  padding:5px 10px;
+  border: 1px solid #333;
+  padding: 5px 10px;
   border-radius: 5px;
 }
