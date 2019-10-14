@@ -26,7 +26,6 @@ class javascript extends React.Component {
   //　Initialized selected option
   handleReset = () => {
     this.setState({ selectedOption: (this.state.selectedOption = null) })
-    // console.log(`Set state Null:`, this.state);
   }
 
   render() {

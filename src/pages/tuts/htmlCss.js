@@ -20,13 +20,11 @@ class htmlCss extends React.Component {
 
   handleChange = selectedOption => {
     this.setState({ selectedOption })
-    // console.log(`Option selected:`, selectedOption);
   }
 
   //　Initialized selected option
   handleReset = () => {
     this.setState({ selectedOption: (this.state.selectedOption = null) })
-    // console.log(`Set state Null:`, this.state);
   }
 
   render() {
