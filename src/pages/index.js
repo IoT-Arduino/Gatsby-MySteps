@@ -10,20 +10,12 @@ import SEO from '../components/SEO'
 import TutsBlock from '../components/TutsBlock'
 
 import styles from "./index.module.scss"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faWordpress,
-  faReact,
-  faVuejs,
-  faJsSquare,
   faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
-import {
-  faDesktop,
-  faFileCode,
-  faArrowCircleRight,
-} from "@fortawesome/free-solid-svg-icons"
 
 export const query = graphql`
   {
