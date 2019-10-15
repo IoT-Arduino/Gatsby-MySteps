@@ -127,7 +127,7 @@ const IndexPage = ({ data }) => {
               <div className="col-md-8 col-lg-12">
                 <div className={styles.twitterWidgetBox}>
                   <a
-                    class="twitter-timeline"
+                    className="twitter-timeline"
                     href="https://twitter.com/DengenT?ref_src=twsrc%5Etfw"
                     data-width="100%"
                     data-height="380"
