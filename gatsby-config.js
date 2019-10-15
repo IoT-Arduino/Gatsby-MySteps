@@ -7,6 +7,9 @@ module.exports = {
     title: "My Programing",
     description: `React,Vue,JavaScript,CSS`,
     author: "Maruo",
+    twitterUsername:"@DengenT",
+    image:'/SiteTop.jpg',
+    siteUrl:'https://mysteps.netlify.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

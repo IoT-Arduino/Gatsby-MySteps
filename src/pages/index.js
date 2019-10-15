@@ -7,6 +7,7 @@ import Head from "../components/Head"
 import Header from "../components/Header"
 import StyledHero from "../components/StyledHero"
 import SideBar1 from "../components/SideBar1"
+import SEO from '../components/SEO'
 
 import styles from "./index.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -69,10 +70,12 @@ export const query = graphql`
   }
 `
 
+// <Head title="My Programing Steps" />
+
 const IndexPage = ({ data }) => {
   return (
     <div>
-      <Head title="My Programing Steps" />
+      <SEO title="Home" />
       <Header />
 
       <StyledHero img={data.defaultBcg.childImageSharp.fluid}>
