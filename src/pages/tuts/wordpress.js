@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Select from "react-select"
 
-import Head from "../../components/Head"
+import SEO from '../../components/SEO'
 import Layout from "../../components/Layout"
 import TutsHeader from "../../components/TutsHeader"
 import styles from "./styles/tutorial.module.scss"
@@ -41,7 +41,7 @@ class Wordpress extends React.Component {
 
     return (
       <Layout>
-        <Head title="WordPress&API Tutorial Selection" />
+        <SEO title="WordPress&API Tutorial Selection" />
 
         <div className={styles.container}>
           <TutsHeader />

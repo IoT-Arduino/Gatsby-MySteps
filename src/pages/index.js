@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Image from "gatsby-image"
 import { graphql } from "gatsby"
 
-import Head from "../components/Head"
 import Header from "../components/Header"
 import StyledHero from "../components/StyledHero"
 import SideBar1 from "../components/SideBar1"

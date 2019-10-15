@@ -4,14 +4,14 @@ import Layout from "../components/Layout"
 import { Link, graphql } from "gatsby"
 
 import styles from "./blog.module.scss"
-import Head from "../components/Head"
+import SEO from '../components/SEO'
 import SideBar1 from "../components/SideBar1"
 import Blogs from "../components/Blogs"
 
 const BlogPage = ({ data }) => {
   return (
     <Layout>
-      <Head title="Blog" />
+      <SEO title="Blog" />
 
       <h1 className={styles.h1}>
         <div className={styles.h1Wrapper}>Blog</div>

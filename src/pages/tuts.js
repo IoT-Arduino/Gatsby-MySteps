@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import Head from "../components/Head"
+import SEO from '../components/SEO'
 import styles from "./index.module.scss"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -20,7 +20,7 @@ import {
 const tuts = () => {
   return (
     <Layout>
-      <Head title="Tutorial Index" />
+      <SEO title="Tutorial Index" />
 
       <div className={styles.container}>
         <div className={styles.contentRegion1}>

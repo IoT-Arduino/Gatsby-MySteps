@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 
-import Head from "../components/Head"
+import SEO from '../components/SEO'
 import SideBar1 from "../components/SideBar1"
 import Pagination from "../components/BlogPagination"
 import Blogs from "../components/Blogs"
@@ -21,7 +21,7 @@ const postList = ({
   },
 }) => (
   <Layout>
-    <Head title="Head" />
+    <SEO title="BlogList" />
 
     <h1 className={styles.h1}>
       <div className={styles.h1Wrapper}>Blog</div>

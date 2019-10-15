@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import Head from "../../components/Head"
+import SEO from '../../components/SEO'
 import Layout from "../../components/Layout"
 import TutsHeader from "../../components/TutsHeader"
 import styles from "./styles/tutorial.module.scss"
@@ -52,7 +52,7 @@ const airtable = () => {
 
   return (
     <Layout>
-      <Head title="Tech News & Tutorials" />
+      <SEO title="Tech News & Tutorials" />
 
       <div className={styles.container}>
         <TutsHeader />

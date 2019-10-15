@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 
 import styles from "./styles/blog.module.scss"
 import Layout from "../components/Layout"
-import Head from "../components/Head"
+import SEO from '../components/SEO'
 
 export const query = graphql`
   query($slug: String!, $catSlug: String) {
@@ -73,7 +73,7 @@ const Blog = props => {
 
   return (
     <Layout>
-      <Head title={props.data.contentfulBlogPost.title} />
+      <SEO title={props.data.contentfulBlogPost.title} />
       <div className={styles.titleBar}></div>
 
       <div className={styles.wrapper}>
