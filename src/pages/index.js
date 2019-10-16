@@ -16,6 +16,9 @@ import {
   faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
+import {
+  faCheck
+} from "@fortawesome/free-solid-svg-icons"
 
 export const query = graphql`
   {
@@ -155,9 +158,11 @@ const IndexPage = ({ data }) => {
               <h3>Fearute of this Gatsby theme</h3>
               <ul>
                 <li className={styles.listGroupItem}>
+                 <FontAwesomeIcon icon={faCheck} className={styles.fa}/>
                   Convert from WordPress theme to Gatsby theme{" "}
                 </li>
                 <li className={styles.listGroupItem}>
+                <FontAwesomeIcon icon={faCheck} className={styles.fa}/>
                   The Logo is created with{" "}
                   <a
                     href="https://www.designevo.com/jp/"
@@ -167,9 +172,11 @@ const IndexPage = ({ data }) => {
                   </a>
                 </li>
                 <li className={styles.listGroupItem}>
+                <FontAwesomeIcon icon={faCheck} className={styles.fa}/>
                   Using Bootstrap and Material-UI for grid system
                 </li>
                 <li className={styles.listGroupItem}>
+                <FontAwesomeIcon icon={faCheck} className={styles.fa}/>
                   CreatePage with GraphQL and Airtable{" "}
                 </li>
               </ul>
