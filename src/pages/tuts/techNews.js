@@ -9,7 +9,7 @@ import styles from "./styles/tutorial.module.scss"
 import Grid from "@material-ui/core/Grid"
 import PageGrid from "../../components/PageGrid"
 
-const airtable = () => {
+const Airtable = () => {
   const data = useStaticQuery(graphql`
     query {
       allAirtable(
@@ -76,4 +76,4 @@ const airtable = () => {
   )
 }
 
-export default airtable
+export default Airtable
