@@ -12,9 +12,9 @@ const PageGrid = ({ grids }) => {
 
   //use static image file in case of no API image retirived
   let imageThumbnail = grids.node.data.Thumbnail
-  if (grids.node.data.Thumbnail == 'Other'){
+  if (grids.node.data.Thumbnail === 'Other'){
     imageThumbnail = '../../pic1.jpg'
-  } else if (grids.node.data.Thumbnail == 'Udemy'){
+  } else if (grids.node.data.Thumbnail === 'Udemy'){
     imageThumbnail = '../../udemy.jpg'
   } else {
     imageThumbnail = grids.node.data.Thumbnail

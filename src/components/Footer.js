@@ -32,7 +32,7 @@ const Footer = () => {
               </li>
               <li>
                 GitHub:{" "}
-                <a href="https://github.com/IoT-Arduino">
+                <a href="https://github.com/IoT-Arduino?tab=repositories">
                   <FontAwesomeIcon
                     icon={faGithub}
                     style={{ color: "#777", fontSize: "1rem" }}

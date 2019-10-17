@@ -202,7 +202,7 @@ const IndexPage = ({ data }) => {
                 </li>
                 <li>
                   GitHub:{" "}
-                  <a href="https://github.com/IoT-Arduino">
+                  <a href="https://github.com/IoT-Arduino?tab=repositories">
                     <FontAwesomeIcon
                       icon={faGithub}
                       style={{ color: "#0FAF97", fontSize: "1rem" }}

@@ -122,6 +122,7 @@ const Blog = props => {
             ))}
             {newRelatedArticles.length < 1 ? <p>no posts</p> : ""}
           </div>
+          
         </div>
       </div>
     </Layout>

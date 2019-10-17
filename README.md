@@ -52,12 +52,16 @@ Some pages are created with Airtable.
 src/  
 　├ components/  
 　├ images/  
+　├ static/   
 　├ templates/  
 　├ pages/  
-　│  ├ tuts  
-　│  │  └ reaGatsby.js  
-　│  └ index.js  
-　└ README.MD  
+　   ├ tuts  
+　   │  ├ reaGatsby.js  
+　   │  ├ ...  
+　   │  └ ...   
+　   └ index.js  
+static/  
+README.MD  
 
 
 ## Deploy
