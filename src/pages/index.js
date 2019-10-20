@@ -39,7 +39,7 @@ export const query = graphql`
           }
           excerpt
           thumbnail {
-            fluid(maxWidth: 100, quality: 10) {
+            fluid(maxWidth: 400, quality: 100) {
               ...GatsbyContentfulFluid
             }
           }

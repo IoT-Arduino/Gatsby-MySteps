@@ -36,6 +36,8 @@ h1.h1 {
 }
 
 .contents {
+  margin: 55px 0 120px;
+
   h2 {
     padding: 0.6rem 1.2rem 1rem;
     color: #494949;
@@ -123,7 +125,12 @@ h1.h1 {
   }
 
   img {
+    display: block;
     margin: 20px 10px 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 25px auto 25px 100px;
   }
 }
 
@@ -153,6 +160,12 @@ h1.h1 {
 }
 
 @media screen and (max-width: 568px) {
+  .contents {
+    img {
+      margin: 25px auto;
+    }
+  }
+
   .relatedItems {
     display: block;
   }
