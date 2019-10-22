@@ -155,7 +155,7 @@ const IndexPage = ({ data }) => {
             </div>
 
             <div className="col-md-7">
-              <h3>Fearute of this Gatsby theme</h3>
+              <h3>Feature of this Gatsby theme</h3>
               <ul>
                 <li className={styles.listGroupItem}>
                  <FontAwesomeIcon icon={faCheck} className={styles.fa}/>
