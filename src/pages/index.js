@@ -239,7 +239,7 @@ const IndexPage = ({ data }) => {
         </div>
 
         <div className={"text-center"}>
-          <p>Created by Maruo ,(c)copy 2019</p>
+          <p>Created by Maruo (c)copy 2019</p>
         </div>
       </footer>
     </div>
