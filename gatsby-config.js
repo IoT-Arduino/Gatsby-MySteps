@@ -72,6 +72,14 @@ module.exports = {
             baseId: process.env.AIRTABLE_BASEID,
             tableName: `Programing-Category`,
           },
+          {
+            baseId: process.env.AIRTABLE_BASEID,
+            tableName: `PG-Salary`,
+          },
+          {
+            baseId: process.env.AIRTABLE_BASEID,
+            tableName: `PG-Demand`,
+          },
         ],
       },
     },
