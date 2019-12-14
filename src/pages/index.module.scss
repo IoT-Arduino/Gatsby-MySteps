@@ -77,30 +77,36 @@ ul {
 .pickItem {
   display: block;
   max-height: 350px;
+  padding:0;
 }
 
-.pickItemImage {
+.pickItemImage{
+  padding:0;
+  padding-bottom:0;
   margin: 0 auto;
-  max-height: 150px;
-  object-fit: cover;
-  width: 100%;
+  max-height: 140px;
+  // height:30%;
+  width: 80%;
+  border-radius: 3px;
+  overflow: hidden;
+  object-fit: none;
+  object-position: 0% 0% ;
 }
 
 .pickItemDesc {
-  padding: 0 15px 5px;
+  padding: 5px 15px 5px;
   overflow: hidden;
 }
 
 .pickItemDescTitle {
-  padding: 5px 0 0;
-  margin: 0;
+  font-size:1rem;
+  padding: 10px 15px;
+  margin: 0 auto;
   color: #444;
 }
 
 .pickItemDescText {
-  padding: 5px 0 0;
-  margin: 0;
-  color: #444;
+  display:none;
 }
 
 /* side area ******************** */
@@ -170,28 +176,36 @@ ul {
   .pickItem {
     display: flex;
     justify-content: space-between;
-    max-height: 150px;
+    height: 150px;
   }
 
   .pickItemImage {
-    margin: 0 auto;
+    margin: 10px auto;
     height: auto;
+    max-width: 25%;
     object-fit: cover;
     flex-basis: 25%;
-    max-width: 25%;
   }
 
   .pickItemDesc {
     flex-basis: 75%;
-    padding: 0 15px 5px;
+    padding: 0 25px;
     overflow: hidden;
   }
 
-  .pickItemDescTitle,
-  .pickItemDescTxt {
+  .pickItemDescTitle{
+    font-size:1.3rem;
+    padding: 10px 0 0;
+    margin: 0;
+    color: #444;
+  }
+
+  .pickItemDescText {
+    display:block;
     padding: 5px 0 0;
     margin: 0;
     color: #444;
+    line-height: 1.4rem;
   }
 }
 
@@ -206,11 +220,11 @@ ul {
   .pickItem {
     display: flex;
     justify-content: space-between;
-    max-height: 150px;
+    height: 150px;
   }
 
   .pickItemImage {
-    margin: 0 auto;
+    margin: 7px auto;
     height: auto;
     object-fit: cover;
     flex-basis: 25%;
@@ -223,10 +237,18 @@ ul {
     overflow: hidden;
   }
 
-  .pickItemDescTitle,
-  .pickItemDescTxt {
+  .pickItemDescTitle{
+    font-size:1.2rem;
+    padding: 7px 0 0;
+    margin: 0;
+    color: #444;
+  }
+
+  .pickItemDescText {
+    display:block;
     padding: 5px 0 0;
     margin: 0;
     color: #444;
+    line-height: 1.4rem;
   }
 }

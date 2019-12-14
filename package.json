@@ -25,7 +25,7 @@
     "chart.js": "^2.9.3",
     "contentful": "^7.9.1",
     "dotenv": "^8.0.0",
-    "gatsby": "^2.16.3",
+    "gatsby": "^2.18.11",
     "gatsby-awesome-pagination": "^0.3.4",
     "gatsby-background-image": "^0.8.0",
     "gatsby-cli": "^2.8.4",

@@ -71,7 +71,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center">
-        <p>Created by {data.site.siteMetadata.author}, (c)copy 2019</p>
+        <p>Created by {data.site.siteMetadata.author}  (c)copy 2019</p>
       </div>
     </footer>
   )

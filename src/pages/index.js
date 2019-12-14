@@ -96,7 +96,7 @@ const IndexPage = ({ data }) => {
                           to={`/blog/${edge.node.slug}`}
                           className={styles.pickItem}
                         >
-                          　{" "}
+                          　
                           <Image
                             fluid={edge.node.thumbnail.fluid}
                             className={styles.pickItemImage}
@@ -106,7 +106,7 @@ const IndexPage = ({ data }) => {
                               {edge.node.title}
                             </h4>
                             <p className={styles.pickItemDescText}>
-                              {edge.node.excerpt.substr(0, 100)}...
+                              {edge.node.excerpt.substr(0, 130)}...
                             </p>
                           </div>
                         </Link>

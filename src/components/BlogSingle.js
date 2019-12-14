@@ -8,14 +8,17 @@ const blogSingle = ({ blog }) => {
 
   return (
     <div className={styles.postsList}>
-      <Image fluid={mainImage} className={styles.postImage} />
+      <Image 
+        fluid={mainImage} 
+        className={styles.postImage} 
+      />
 
       <div className={styles.postText}>
         <Link to={`/blog/${blog.slug}`} className={styles.postTitle}>
           {blog.title}
         </Link>
 
-        <p>
+        <p className={styles.postCat}>
           <Link
             to={`/blog/${blog.catetory.catSlug}/`}
             className={styles.catLink}

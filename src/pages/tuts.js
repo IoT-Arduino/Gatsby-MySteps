@@ -2,12 +2,12 @@
 
 
 import React,{Component} from "react"
-import { Bar } from 'react-chartjs-2';
+import { Bar,HorizontalBar } from 'react-chartjs-2';
 import { graphql } from 'gatsby'
 import styles from "./tuts.module.scss"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import TutsBlock from "../components/TutsBlock"
+import TutsHeader from "../components/TutsHeader"
 
 
 class tuts extends Component  {
@@ -209,50 +209,57 @@ class tuts extends Component  {
     return (
       <Layout>
       <SEO title="Tutorial Index" />
-    <div className={styles.wrapper}>
-       <TutsBlock />
+      <div className={styles.wrapper}>
+      <TutsHeader />
 
-        <Bar 
-            style={{ margin:'20px'}}
-            data={chartData}
-            options={{
-                title:{
-                  display:true,
-                  text:'FrontEnd Engeneer Salary (USD)',
-                  fontSize:25
-                },
-                legend:{
-                  display:true,
-                  position:'top'
-                },
-                responsive:true,
-                scales: {
-                  yAxes: [{
-                      id: "y-axis-1",   // Y軸のID
-                      type: "linear",   // linear固定 
-                      position: "left", // どちら側に表示される軸か？
-                      ticks: {          // スケール
-                          max: 150000,
-                          min: 0,
-                          stepSize: 50000
-                      },
-                  }],
-               }
-              }}
-        />
+       <div className={styles.chartWrapper}>
+         <h4>FrontEnd Job Market Data</h4>
 
+       <div className={styles.chartContainer}>
+          <Bar 
+              data={chartData}
+              options={{
+                  title:{
+                    display:true,
+                    text:'FrontEnd Engeneer Salary (USD)',
+                    fontSize:16
+                  },
+                  legend:{
+                    display:false,
+                    position:'right'
+                  },
+                  responsive:true,
+                  maintainAspectRatio: true,
+                  scales: {
+                    yAxes: [{
+                        id: "y-axis-1",   // Y軸のID
+                        type: "linear",   // linear固定 
+                        position: "left", // どちら側に表示される軸か？
+                        ticks: {          // スケール
+                            max: 150000,
+                            min: 0,
+                            stepSize: 50000
+                        },
+                    }],
+                  }
+                }}
+          />
+
+       </div>
+      <div className={styles.chartContainer}>
+      
         <Bar
-            style={{ margin:`40px`}}
+            // style={{ margin:`40px`}}
             data={chartData2}
             options={{
                 title:{
                   display:true,
                   text:'FrontEnd Engeneer Job offer',
-                  fontSize:25
+                  fontSize:16
                 },
                 legend:{
-                  display:true,
-                  position:'top'
+                  display:false,
+                  position:'bottom'
                 },
                 responsive:true,
                 scales: {
@@ -263,13 +270,19 @@ class tuts extends Component  {
                       ticks: {          // スケール
                           max: 4000,
                           min: 0,
-                          stepSize: 500
+                          stepSize: 1000
                       },
                   }],
               }
               }}
         />
-
+      </div>
+        
+      <div className={styles.chartContainer}>
+            <p>Description </p>
+      </div>
+      
+        </div>
         </div>
       </Layout>
     );

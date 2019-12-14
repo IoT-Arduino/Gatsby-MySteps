@@ -1,42 +1,67 @@
 //Post Lists 
 
 .postsList{
-display:flex;
-border-bottom:solid 1px #444;
-margin:1.5rem 0;
-
+    display:flex;
+    border-bottom:solid 1px #444;
+    margin:15px 0;
 }
     
 @media screen and (max-width:568px){
     .postsList{
         display:block;
     }
+
+    .postTitle{
+        font-size:1rem;
+        font-weight:600;
+        line-height: 1.2rem;
+        margin:10px 0;
+    }
+
+    .postText{
+        padding:10px 15px 5px 25px;
+    }
+
+    .postImage{
+        max-width:80%;
+        max-height:200px;
+        object-fit:cover;
+        margin:10px auto ;
+    }
 }
 
 .postTitle{
-    font-size:1.5rem;
+    font-size:1.2rem;
     font-weight:600;
+    line-height: 1.5rem;
     text-decoration: none;
 }
 
+.postCat{
+    margin:10px 0 10px auto;
+    display:inline-block;
+    width:100%;
+}
+
 .postImage{
-margin:5px 0 auto;
-height:auto;
-object-fit: contain;
-width:100%;
-flex-basis: 25%;
+    margin:5px 0 auto;
+    height:auto;
+    object-fit: contain;
+    width:100%;
+    flex-basis: 25%;
 }
 
 .postText{
-flex-basis: 75%;
-padding:0 15px 5px;
+    flex-basis: 75%;
+    padding:0 15px 5px 25px;
+    line-height: 1.3rem;
 }
 
 .catLink{
-font-size:0.8rem;
-background-color:#41b8a6;
-color:#fff;
-padding:3px 10px;
-border-radius:5px;
-margin-right:10px;
+    font-size:0.8rem;
+    background-color:#41b8a6;
+    color:#fff;
+    padding:3px 10px;
+    border-radius:5px;
+    margin-right:10px;
 }
