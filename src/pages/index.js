@@ -120,14 +120,13 @@ const IndexPage = ({ data }) => {
 
           <div className="col-lg-3">
             <div className="row">
-              <div className="col-md-4 col-lg-12">
+              <div className="col-sm-6 col-lg-12">
                 <div className={styles.widgetBox}>
-                  Blog Category
                   <SideBar1 />
                 </div>
               </div>
 
-              <div className="col-md-8 col-lg-12">
+              <div className="col-sm-6 col-lg-12">
                 <div className={styles.twitterWidgetBox}>
                   <a
                     className="twitter-timeline"

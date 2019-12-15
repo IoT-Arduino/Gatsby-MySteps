@@ -15,7 +15,8 @@ a {
 
 a:hover {
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.5;
+  color: #0faf97;
 }
 
 ul {
@@ -57,8 +58,11 @@ ul {
 /* Pickup Article Section ******************** */
 
 .panelTitle {
-  margin: 10px 15px 25px;
-  color: #444;
+  margin: 10px 8px 25px;
+  color: #fff;
+  padding:10px 16px;
+  border-radius:5px;
+  background-color:#0faf97;
 }
 
 .pickList {
@@ -113,6 +117,15 @@ ul {
 
 .widgetBox {
   margin: 20px 15px;
+  padding:10px;
+  border:1px solid #e5e5e5;
+  border-radius:5px;
+}
+
+.widgetTitle{
+  font-size:1rem;
+  color:#444;
+  font-weight:600;
 }
 
 .twitterWidgetBox {

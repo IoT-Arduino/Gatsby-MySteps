@@ -18,3 +18,29 @@
   margin:40px 0;
 }
 
+
+.legendContainer{
+  margin:20px 0;
+}
+
+.chartLegend{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.chartLegend li{
+  margin:0 10px;;
+}
+
+.faUsa{
+  color:blue;
+}
+
+.faJpn{
+  color:red;
+}
+
+.faLon{
+  color:green;
+}

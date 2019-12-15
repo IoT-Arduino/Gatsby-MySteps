@@ -19,13 +19,14 @@ const SideBar1 = () => {
   `)
 
   return (
-    <div>
+    <div className={styles.widgetBox}>
+    <div className={styles.widgetTitle}>Blog Category</div>
       <ul className={styles.sideUl}>
         {res.allContentfulCategory.edges.map(edge => {
           return (
             <Link to={`/blog/${edge.node.catSlug}`} key={edge.node.id}>
               <li>
-                <h4 className={styles.sideList}>{edge.node.catTitle}</h4>
+                <p className={styles.sideList}>{edge.node.catTitle}</p>
               </li>
             </Link>
           )

@@ -1,6 +1,3 @@
-
-
-
 import React,{Component} from "react"
 import { Bar } from 'react-chartjs-2';
 import { graphql } from 'gatsby'
@@ -8,6 +5,11 @@ import styles from "./tuts.module.scss"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import TutsHeader from "../components/TutsHeader"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faSquare
+} from "@fortawesome/free-solid-svg-icons"
 
 
 class tuts extends Component  {
@@ -278,8 +280,21 @@ class tuts extends Component  {
         />
       </div>
         
-      <div className={styles.chartContainer}>
-            <p>Description </p>
+      <div className={styles.legendContainer}>
+            <ul className={styles.chartLegend}>
+              <li><FontAwesomeIcon icon={faSquare} className={styles.faUsa}/>SanJose</li>
+              <li><FontAwesomeIcon icon={faSquare} className={styles.faUsa}/>SanFrancisco</li>
+              <li><FontAwesomeIcon icon={faSquare} className={styles.faUsa}/>WashingtonDC</li>
+              <li><FontAwesomeIcon icon={faSquare} className={styles.faUsa}/>Seattle</li>
+              <li><FontAwesomeIcon icon={faSquare} className={styles.faJpn}/>Tokyo</li>
+              <li><FontAwesomeIcon icon={faSquare} className={styles.faJpn}/>Osaka</li>
+              <li><FontAwesomeIcon icon={faSquare} className={styles.faLon}/>London</li>
+            </ul>
+      </div>
+
+      <div className={styles.legendContainer}>
+       DataSource:Indeed.com as of Sep2019.<br />
+       Some data are estimates.
       </div>
       
         </div>

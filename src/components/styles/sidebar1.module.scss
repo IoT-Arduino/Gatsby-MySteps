@@ -1,4 +1,10 @@
 
+.widgetTitle{
+    font-size:1rem;
+    color:#444;
+    font-weight:600;
+  }
+
 .sideUl{
     margin:10px 10px 5px ;
 }
@@ -6,6 +12,8 @@
 
 .sideList{
     color:#41b8a6;
+    font-size:1.2rem;
+    line-height:1.5rem;
 }
 
 .sideList:hover{
