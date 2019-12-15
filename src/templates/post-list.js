@@ -30,7 +30,6 @@ const postList = ({
     <div className={styles.wrapper}>
       <div className={styles.mainContents}>
         <Blogs blogs={allContentfulBlogPost.edges} />
-
         <Pagination page={humanPageNumber} totalPages={numberOfPages} />
       </div>
 

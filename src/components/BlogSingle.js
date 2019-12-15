@@ -27,7 +27,7 @@ const blogSingle = ({ blog }) => {
           </Link>
           {blog.publishedDate}
         </p>
-        <p>{blog.excerpt.substr(0, 150)}</p>
+        <p className={styles.postExcerpt}>{blog.excerpt.substr(0, 150)}</p>
       </div>
     </div>
   )

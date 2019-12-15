@@ -18,7 +18,7 @@ const Footer = () => {
     <footer className={footerStyles.footer}>
       <div className={footerStyles.footerRow}>
         <div className="row">
-          <div className="col-sm-4">
+          <div className="col-sm-4 text-center">
             <h4>Social</h4>
             <ul>
               <li>
@@ -42,7 +42,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-sm-4">
+          <div className="col-sm-4 text-center">
             <h4>Portfolio</h4>
             <ul>
               <li>
@@ -54,7 +54,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-sm-4">
+          <div className="col-sm-4 text-center">
             <h4>About</h4>
             <ul>
               <li>

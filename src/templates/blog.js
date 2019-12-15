@@ -1,11 +1,13 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import Image from "gatsby-image"
 
 import styles from "./styles/blog.module.scss"
 import Layout from "../components/Layout"
 import SEO from '../components/SEO'
+
+import Grid from "@material-ui/core/Grid"
+import RelatedGrid from "../components/RelatedGrid"
 
 export const query = graphql`
   query($slug: String!, $catSlug: String) {
@@ -97,11 +99,13 @@ const Blog = props => {
         </div>
 
         <div>
+
           <div className={styles.relatedTitle}>
             <h4>Related Articles</h4>
           </div>
 
-          <div className={styles.relatedArticles}>
+          {/*
+           <div className={styles.relatedArticles}>
             {newRelatedArticles.map(({ node }) => (
               <div key={node.id} className={styles.relatedItems}>
                 <Image
@@ -122,6 +126,14 @@ const Blog = props => {
             ))}
             {newRelatedArticles.length < 1 ? <p>no posts</p> : ""}
           </div>
+          */}
+
+
+        <Grid container>
+          {newRelatedArticles.map(({ node }) => (
+            <RelatedGrid grids={node} key={node.id} />
+            ))}
+        </Grid>
           
         </div>
       </div>

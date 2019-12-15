@@ -188,7 +188,7 @@ const IndexPage = ({ data }) => {
       <footer className={styles.footer}>
         <div className={styles.footerRow}>
           <div className="row p-20">
-            <div className="col-sm-4">
+            <div className="col-sm-4 text-center">
               <h4>Social</h4>
               <ul>
                 <li>
@@ -212,7 +212,7 @@ const IndexPage = ({ data }) => {
               </ul>
             </div>
 
-            <div className="col-sm-4">
+            <div className="col-sm-4 text-center">
               <h4>Portfolio</h4>
               <ul>
                 <li>
@@ -224,7 +224,7 @@ const IndexPage = ({ data }) => {
               </ul>
             </div>
 
-            <div className="col-sm-4">
+            <div className="col-sm-4 text-center">
               <h4>About</h4>
               <ul>
                 <li>

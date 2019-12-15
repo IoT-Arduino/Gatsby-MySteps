@@ -2,7 +2,7 @@
 
 
 import React,{Component} from "react"
-import { Bar,HorizontalBar } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import { graphql } from 'gatsby'
 import styles from "./tuts.module.scss"
 import Layout from "../components/Layout"
