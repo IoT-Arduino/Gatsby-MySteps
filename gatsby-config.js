@@ -84,17 +84,17 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    {
-      resolve: "gatsby-plugin-prefetch-google-fonts",
-      options: {
-        fonts: [
-          {
-            family: "Open Sans",
-            variants: ["200", "400", "500", "600", "700"],
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-prefetch-google-fonts",
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: "Open Sans",
+    //         variants: ["200", "400", "500", "600", "700"],
+    //       },
+    //     ],
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
