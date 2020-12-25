@@ -75,7 +75,7 @@ const IndexPage = ({ data }) => {
 
       <StyledHero img={data.defaultBcg.childImageSharp.fluid}>
         <div className={styles.jumboContainer}>
-          <h1 className={styles.jumboText}>My Programing</h1>
+          <h1 className={styles.jumboText}>Y-Learning</h1>
         </div>
       </StyledHero>
 
