@@ -84,7 +84,7 @@ const IndexPage = ({ data }) => {
           <div className="col-lg-9">
             <div className="pickUp">
               <div className="panelHeading">
-                <h3 className={styles.panelTitle}>PickUp Article</h3>
+                <h3 className={styles.panelTitle}>PickUp Articles</h3>
               </div>
 
               <article>
