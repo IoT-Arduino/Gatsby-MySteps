@@ -24,7 +24,6 @@ class vuejs extends React.Component {
 
   //　Initialized selected option
   handleReset = () => {
-    // this.setState({ selectedOption: (this.state.selectedOption = null) })
     this.setState({ selectedOption: null })
   }
 

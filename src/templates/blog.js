@@ -4,7 +4,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import styles from "./styles/blog.module.scss"
 import Layout from "../components/Layout"
-import SEO from '../components/SEO'
+import SEO from "../components/SEO"
 
 import Grid from "@material-ui/core/Grid"
 import RelatedGrid from "../components/RelatedGrid"
@@ -98,43 +98,14 @@ const Blog = props => {
           )}
         </div>
 
-        <div>
+        <div className={styles.relatedWrapper}>
+          <h4 className={styles.relatedTitle}>Related Articles</h4>
 
-          <div className={styles.relatedTitle}>
-            <h4>Related Articles</h4>
-          </div>
-
-          {/*
-           <div className={styles.relatedArticles}>
+          <Grid container>
             {newRelatedArticles.map(({ node }) => (
-              <div key={node.id} className={styles.relatedItems}>
-                <Image
-                  fluid={node.thumbnail.fluid}
-                  className={styles.relatedImage}
-                />
-                <div className={styles.relatedTexts}>
-                  <Link
-                    to={`/blog/${node.slug}`}
-                    className={styles.relatedLink}
-                  >
-                    {node.title}
-                    <br />
-                  </Link>
-                  <p className={styles.relatedDesc}>{node.excerpt}</p>
-                </div>
-              </div>
+              <RelatedGrid grids={node} key={node.id} />
             ))}
-            {newRelatedArticles.length < 1 ? <p>no posts</p> : ""}
-          </div>
-          */}
-
-
-        <Grid container>
-          {newRelatedArticles.map(({ node }) => (
-            <RelatedGrid grids={node} key={node.id} />
-            ))}
-        </Grid>
-          
+          </Grid>
         </div>
       </div>
     </Layout>

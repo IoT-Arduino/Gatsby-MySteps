@@ -27,122 +27,67 @@ ul {
 
 .container {
   max-width: 1020px;
-  margin: 3rem auto;
+  margin: 32px auto;
+  padding: 8px 32px;
 }
 
 /* Hero Section ******************** */
 
 .jumbo-container {
-  position: relative;
-  max-width: 1020px;
-  margin: 0 auto;
+  height: 384px;
+  padding: 32px 0;
 }
 
-.jumbo-text {
-  position: absolute;
-  top: 120px;
-  left: 1%;
-  width: 370px;
+.jumbo-title {
+  width: 240px;
+  margin: 112px auto 24px;
   color: #fff;
   font-weight: 700;
   padding: 0 1px;
-  background-color: rgba(0, 0, 0, 0.02);
-  opacity: 1;
-
+  text-align: center;
   font-weight: 700;
   color: #fff;
   text-shadow: 1px 1px 0 #777, -1px -1px 0 #777, -1px 1px 0 #777,
     1px -1px 0 #777, 0px 1px 0 #777, 0-1px 0 #777, -1px 0 0 #777, 1px 0 0 #777;
 }
 
+.jumbo-text {
+  margin: 16px auto;
+  width: 80%;
+  text-align: center;
+}
+
 /* Pickup Article Section ******************** */
 
-.panelTitle {
-  margin: 10px 8px 25px;
-  color: #fff;
-  padding:10px 16px;
-  border-radius:5px;
-  background-color:#0faf97;
+.pickup-block{
+  margin: 64px 0;
 }
 
-.pickList {
-  padding: 0;
-  margin: 10px 10px;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  transition: all 0.3s;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+.panel-title {
+  color: #777;
+  padding: 0 16px;
+  border-left: #0faf97 8px solid;
+  line-height: 1.2;
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
-.pickList:hover {
-  transform: scale(1.02, 1.02);
-}
-
-.pickItem {
-  display: block;
-  max-height: 350px;
-  padding:0;
-}
-
-.pickItemImage{
-  padding:0;
-  padding-bottom:0;
-  margin: 0 auto;
-  max-height: 140px;
-  // height:30%;
-  width: 80%;
-  border-radius: 3px;
-  overflow: hidden;
-  object-fit: none;
-  object-position: 0% 0% ;
-}
-
-.pickItemDesc {
-  padding: 5px 15px 5px;
-  overflow: hidden;
-}
-
-.pickItemDescTitle {
-  font-size:1rem;
-  padding: 10px 15px;
-  margin: 0 auto;
-  color: #444;
-}
-
-.pickItemDescText {
-  display:none;
-}
-
-/* side area ******************** */
-
-.widgetBox {
-  margin: 20px 15px;
-  padding:10px;
-  border:1px solid #e5e5e5;
-  border-radius:5px;
-}
-
-.widgetTitle{
-  font-size:1rem;
-  color:#444;
-  font-weight:600;
-}
-
-.twitterWidgetBox {
-  margin: 20px 15px;
-  border: 1px solid #e5e5e5;
-}
 
 /* content region2 ******************** */
 
 .contentRegion2 {
-  margin: 20px;
+  margin: 64px 16px 32px;
   padding: 20px 35px 30px 30px;
   background-color: #f4f4f4;
 }
 
 .region2Img {
-  margin: 20px 10px;
+  margin: 16px 8px 8px;
+}
+
+.listGroupHeader {
+  margin-top: 12px;
+  padding-left: 8px;
 }
 
 .listGroupItem {
@@ -155,7 +100,7 @@ ul {
 
 .fa {
   color: #0faf97;
-  margin:0 7px 0 0;
+  margin: 0 7px 0 0;
 }
 
 /* footet ******************** */
@@ -206,15 +151,15 @@ ul {
     overflow: hidden;
   }
 
-  .pickItemDescTitle{
-    font-size:1.3rem;
+  .pickItemDescTitle {
+    font-size: 1.3rem;
     padding: 10px 0 0;
     margin: 0;
     color: #444;
   }
 
   .pickItemDescText {
-    display:block;
+    display: block;
     padding: 5px 0 0;
     margin: 0;
     color: #444;
@@ -250,15 +195,15 @@ ul {
     overflow: hidden;
   }
 
-  .pickItemDescTitle{
-    font-size:1.2rem;
+  .pickItemDescTitle {
+    font-size: 1.2rem;
     padding: 7px 0 0;
     margin: 0;
     color: #444;
   }
 
   .pickItemDescText {
-    display:block;
+    display: block;
     padding: 5px 0 0;
     margin: 0;
     color: #444;

@@ -19,11 +19,16 @@ const BlogPage = ({ data }) => {
 
       <div className={styles.wrapper}>
         <div className={styles.mainContents}>
-          <Blogs blogs={data.allContentfulBlogPost.edges} />
+          <Blogs
+            blogs={data.allContentfulBlogPost.edges}
+            className={styles.blogItems}
+          />
 
-          <Link to="/blog/page/2" className={styles.pagination}>
-            Next
-          </Link>
+          <div className={styles.paginationLink}>
+            <Link to="/blog/page/2" className={styles.paginationBtn}>
+              Next
+            </Link>
+          </div>
         </div>
 
         <div className={styles.sideWidget}>

@@ -39,16 +39,6 @@ const Header = () => {
                 className={styles.navItem}
                 activeClassName={styles.activeNavItem}
                 partiallyActive={true}
-                to="/tuts"
-              >
-                Tutorials
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={styles.navItem}
-                activeClassName={styles.activeNavItem}
-                partiallyActive={true}
                 to="/blogs"
               >
                 Blog

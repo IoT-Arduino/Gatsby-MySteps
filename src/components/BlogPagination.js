@@ -5,7 +5,7 @@ import styles from "./styles/blogPagination.module.scss"
 
 const BlogPagination = ({ page, totalPages }) => (
   <div className={styles.paginationWrapper}>
-    <p>
+    <p className={styles.paginationNumber}>
       Page {page} / {totalPages}
     </p>
 
@@ -15,7 +15,7 @@ const BlogPagination = ({ page, totalPages }) => (
           to={page === 2 ? `/blog` : `/blog/page/${page - 1}`}
           className={styles.paginationBtn}
         >
-          Previous
+          Prev
         </Link>
       ) : (
         <div />

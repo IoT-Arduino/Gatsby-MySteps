@@ -5,7 +5,7 @@ import styles from "./styles/catPagination.module.scss"
 
 const CatPagination = ({ catSlug, page, totalPages }) => (
   <div className={styles.paginationWrapper}>
-    <p>
+    <p className={styles.paginationNumber}>
       Page {page} / {totalPages}
     </p>
     <div>

@@ -1,24 +1,22 @@
 import React from "react"
-import { Link } from "gatsby"
 import Image from "gatsby-image"
 import { graphql } from "gatsby"
-
-import Header from "../components/Header"
-import StyledHero from "../components/StyledHero"
-import SideBar1 from "../components/SideBar1"
-import SEO from '../components/SEO'
-import TutsBlock from '../components/TutsBlock'
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import TutsBlock from "../components/TutsBlock"
 
 import styles from "./index.module.scss"
 
+import Grid from "@material-ui/core/Grid"
+import Card from "@material-ui/core/Card"
+import CardActions from "@material-ui/core/CardActions"
+import CardContent from "@material-ui/core/CardContent"
+import CardMedia from "@material-ui/core/CardMedia"
+import Button from "@material-ui/core/Button"
+import Typography from "@material-ui/core/Typography"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faTwitter,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons"
-import {
-  faCheck
-} from "@fortawesome/free-solid-svg-icons"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
 
 export const query = graphql`
   {
@@ -65,86 +63,79 @@ export const query = graphql`
   }
 `
 
-// <Head title="My Programing Steps" />
-
 const IndexPage = ({ data }) => {
   return (
-    <div>
+    <Layout>
       <SEO title="Home" />
-      <Header />
 
-      <StyledHero img={data.defaultBcg.childImageSharp.fluid}>
-        <div className={styles.jumboContainer}>
-          <h1 className={styles.jumboText}>Y-Learning</h1>
-        </div>
-      </StyledHero>
+      <div className={styles.jumboContainer}>
+        <h1 className={styles.jumboTitle}>Y-Learning</h1>
+        <p className={styles.jumboText}>
+          Tutorial Selections for Frontend Developers
+        </p>
+      </div>
 
       <div className={styles.container}>
-        <div className="row">
-          <div className="col-lg-9">
-            <div className="pickUp">
-              <div className="panelHeading">
-                <h3 className={styles.panelTitle}>PickUp Articles</h3>
-              </div>
-
-              <article>
-                <ul>
-                  {data.allContentfulBlogPost.edges.map(edge => {
-                    return (
-                      <li key={edge.node.title} className={styles.pickList}>
-                        <Link
-                          to={`/blog/${edge.node.slug}`}
-                          className={styles.pickItem}
-                        >
-                          　
-                          <Image
-                            fluid={edge.node.thumbnail.fluid}
-                            className={styles.pickItemImage}
-                          />
-                          <div className={styles.pickItemDesc}>
-                            <h4 className={styles.pickItemDescTitle}>
-                              {edge.node.title}
-                            </h4>
-                            <p className={styles.pickItemDescText}>
-                              {edge.node.excerpt.substr(0, 130)}...
-                            </p>
-                          </div>
-                        </Link>
-                      </li>
-                    )
-                  })}
-                </ul>
-              </article>
-            </div>
-          </div>
-
-          <div className="col-lg-3">
-            <div className="row">
-              <div className="col-sm-6 col-lg-12">
-                <div className={styles.widgetBox}>
-                  <SideBar1 />
-                </div>
-              </div>
-
-              <div className="col-sm-6 col-lg-12">
-                <div className={styles.twitterWidgetBox}>
-                  <a
-                    className="twitter-timeline"
-                    href="https://twitter.com/DengenT?ref_src=twsrc%5Etfw"
-                    data-width="100%"
-                    data-height="380"
-                  >
-                    Twitter
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <TutsBlock />
 
-              <section className={styles.contentRegion2}>
+        <div className={styles.pickupBlock}>
+          <h3 className={styles.panelTitle}>PickUp Articles</h3>
+
+          <Grid container spacing={3}>
+            {data.allContentfulBlogPost.edges.map(edge => {
+              return (
+                <Grid
+                  item
+                  xs={12}
+                  sm={6}
+                  md={3}
+                  style={{ padding: 24 }}
+                  key={edge.node.title}
+                >
+                  <Card>
+                    <CardMedia
+                      style={{ height: 0, paddingTop: "56.25%" }}
+                      image={edge.node.thumbnail.fluid.src}
+                      title={edge.node.title}
+                    />
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant="inherit"
+                        component="h3"
+                        style={{
+                          height: 40,
+                          overflow: "hidden",
+                          fontSize: "18px",
+                        }}
+                      >
+                        {edge.node.title}
+                      </Typography>
+                      <Typography
+                        component="p"
+                        style={{ marginBottom: "10px" }}
+                      >
+                        "{edge.node.excerpt.substr(0, 130)}..."
+                      </Typography>
+                    </CardContent>
+                    <CardActions>
+                      <Button
+                        size="small"
+                        color="primary"
+                        href={`/blog/${edge.node.slug}`}
+                        target="_blank"
+                      >
+                        Go to Article
+                      </Button>
+                    </CardActions>
+                  </Card>
+                </Grid>
+              )
+            })}
+          </Grid>
+        </div>
+
+        <section className={styles.contentRegion2}>
           <div className="row">
             <div className="col-md-5">
               <Image
@@ -154,14 +145,12 @@ const IndexPage = ({ data }) => {
             </div>
 
             <div className="col-md-7">
-              <h3>Feature of this Gatsby theme</h3>
+              <h3 className={styles.listGroupHeader}>
+                Feature of this Gatsby theme
+              </h3>
               <ul>
                 <li className={styles.listGroupItem}>
-                 <FontAwesomeIcon icon={faCheck} className={styles.fa}/>
-                  Convert from WordPress theme to Gatsby theme{" "}
-                </li>
-                <li className={styles.listGroupItem}>
-                <FontAwesomeIcon icon={faCheck} className={styles.fa}/>
+                  <FontAwesomeIcon icon={faCheck} className={styles.fa} />
                   The Logo is created with{" "}
                   <a
                     href="https://www.designevo.com/jp/"
@@ -171,11 +160,11 @@ const IndexPage = ({ data }) => {
                   </a>
                 </li>
                 <li className={styles.listGroupItem}>
-                <FontAwesomeIcon icon={faCheck} className={styles.fa}/>
+                  <FontAwesomeIcon icon={faCheck} className={styles.fa} />
                   Using Bootstrap and Material-UI for grid system
                 </li>
                 <li className={styles.listGroupItem}>
-                <FontAwesomeIcon icon={faCheck} className={styles.fa}/>
+                  <FontAwesomeIcon icon={faCheck} className={styles.fa} />
                   CreatePage with GraphQL and Airtable{" "}
                 </li>
               </ul>
@@ -183,65 +172,7 @@ const IndexPage = ({ data }) => {
           </div>
         </section>
       </div>
-
-      <footer className={styles.footer}>
-        <div className={styles.footerRow}>
-          <div className="row p-20">
-            <div className="col-sm-4 text-center">
-              <h4>Social</h4>
-              <ul>
-                <li>
-                  Twiter:{" "}
-                  <a href="https://twitter.com/DengenT?lang=ja">
-                    <FontAwesomeIcon
-                      icon={faTwitter}
-                      style={{ color: "#0FAF97", fontSize: "1rem" }}
-                    />
-                  </a>
-                </li>
-                <li>
-                  GitHub:{" "}
-                  <a href="https://github.com/IoT-Arduino?tab=repositories">
-                    <FontAwesomeIcon
-                      icon={faGithub}
-                      style={{ color: "#0FAF97", fontSize: "1rem" }}
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="col-sm-4 text-center">
-              <h4>Portfolio</h4>
-              <ul>
-                <li>
-                  <a href="/">Learning Note</a>
-                </li>
-                <li>
-                  <a href="/">To be created</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="col-sm-4 text-center">
-              <h4>About</h4>
-              <ul>
-                <li>
-                  <a href="/">Sitemap</a>
-                </li>
-                <li>
-                  <a href="/">Sitemap</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className={"text-center"}>
-          <p>Created by @Maruo (c)copy 2019</p>
-        </div>
-      </footer>
-    </div>
+    </Layout>
   )
 }
 

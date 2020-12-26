@@ -28,6 +28,14 @@ h1.h1 {
   margin: 20px 15px 20px 15px;
 }
 
+.blog-items{
+  margin-bottom: 64px;
+}
+
+.pagination-link{
+  margin: 32px 32px;
+}
+
 .sideWidget {
   display: block;
   margin: 10px 10px;
@@ -104,10 +112,19 @@ h1.h1 {
   }
 }
 
-.pagination {
-  margin: 20px 0 0 90%;
-  text-align: right;
-  border: 1px solid #333;
-  padding: 5px 10px;
+
+.pagination-btn {
+  color: #fff;
+  background: #0faf97;
+  font-size: 1rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+  padding: 6px 16px;
   border-radius: 5px;
+}
+
+.pagination-btn:hover {
+  background: #0faf97;
+  color: #fff;
+  opacity: 0.7;
 }
