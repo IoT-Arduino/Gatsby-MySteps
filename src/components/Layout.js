@@ -7,6 +7,10 @@ import layoutStyles from "./styles/layout.module.scss"
 
 import "bootstrap/dist/css/bootstrap.css"
 
+import "@fortawesome/fontawesome-svg-core/styles.css"
+import { config } from "@fortawesome/fontawesome-svg-core"
+config.autoAddCss = false
+
 const Layout = props => {
   return (
     <div className={layoutStyles.wrapper}>

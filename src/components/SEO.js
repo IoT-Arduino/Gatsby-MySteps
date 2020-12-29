@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import ogp_image from "../images/pic1.jpg"
+// import ogp_image from "../images/pic1.jpg"
 
 const getData = graphql`
   query {
@@ -29,7 +29,7 @@ const SEO = ({ title, description }) => {
     twitterUsername,
   } = site.siteMetadata
 
-  const defaultImage = `${siteUrl}${ogp_image}`
+  // const defaultImage = `${siteUrl}${ogp_image}`
 
   return (
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle} `}>
@@ -40,7 +40,7 @@ const SEO = ({ title, description }) => {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={siteTitle} />
       <meta property="og:description" content={siteDesc} />
-      <meta property="og:image" content={`${siteUrl}${defaultImage}`} />
+      <meta property="og:image" content={`${siteUrl}${image}`} />
       <meta property="og:image:width" content="400" />
       <meta property="og:image:height" content="300" />
 
@@ -49,7 +49,7 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDesc} />
-      <meta name="twitter:image" content={`${siteUrl}${defaultImage}`} />
+      <meta name="twitter:image" content={`${siteUrl}${image}`} />
     </Helmet>
   )
 }
