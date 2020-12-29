@@ -69,7 +69,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
 
       <div className={styles.jumboContainer}>
-        <h1 className={styles.jumboTitle}>Y-Learning</h1>
+        <h1 className={styles.jumboTitle}>My Steps</h1>
         <p className={styles.jumboText}>
           Tutorial Selections for Frontend Developers
         </p>
@@ -80,7 +80,6 @@ const IndexPage = ({ data }) => {
 
         <div className={styles.pickupBlock}>
           <h3 className={styles.panelTitle}>PickUp Articles</h3>
-
           <Grid container spacing={3}>
             {data.allContentfulBlogPost.edges.map(edge => {
               return (
@@ -113,9 +112,8 @@ const IndexPage = ({ data }) => {
                       </Typography>
                       <Typography
                         component="p"
-                        style={{ marginBottom: "10px" }}
                       >
-                        "{edge.node.excerpt.substr(0, 130)}..."
+                        "{edge.node.excerpt.substr(0, 80)}..."
                       </Typography>
                     </CardContent>
                     <CardActions>

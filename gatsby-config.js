@@ -72,29 +72,10 @@ module.exports = {
             baseId: process.env.AIRTABLE_BASEID,
             tableName: `Programing-Category`,
           },
-          {
-            baseId: process.env.AIRTABLE_BASEID,
-            tableName: `PG-Salary`,
-          },
-          {
-            baseId: process.env.AIRTABLE_BASEID,
-            tableName: `PG-Demand`,
-          },
         ],
       },
     },
     `gatsby-plugin-styled-components`,
-    // {
-    //   resolve: "gatsby-plugin-prefetch-google-fonts",
-    //   options: {
-    //     fonts: [
-    //       {
-    //         family: "Open Sans",
-    //         variants: ["200", "400", "500", "600", "700"],
-    //       },
-    //     ],
-    //   },
-    // },
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {

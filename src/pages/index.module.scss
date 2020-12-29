@@ -99,11 +99,12 @@ ul {
 }
 
 .fa {
+  // max-width: 100px;
   color: #0faf97;
   margin: 0 7px 0 0;
 }
 
-/* footet ******************** */
+/* footer ******************** */
 
 .footer {
   padding: 20px;
@@ -123,90 +124,90 @@ ul {
 
 /* media query */
 
-@media (min-width: 1051px) {
-  .pickList {
-    padding: 0;
-    margin: 10px 10px;
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-  }
+// @media (min-width: 1051px) {
+//   .pickList {
+//     padding: 0;
+//     margin: 10px 10px;
+//     border: 1px solid #e5e5e5;
+//     border-radius: 3px;
+//   }
 
-  .pickItem {
-    display: flex;
-    justify-content: space-between;
-    height: 150px;
-  }
+//   .pickItem {
+//     display: flex;
+//     justify-content: space-between;
+//     height: 150px;
+//   }
 
-  .pickItemImage {
-    margin: 10px auto;
-    height: auto;
-    max-width: 25%;
-    object-fit: cover;
-    flex-basis: 25%;
-  }
+//   .pickItemImage {
+//     margin: 10px auto;
+//     height: auto;
+//     max-width: 25%;
+//     object-fit: cover;
+//     flex-basis: 25%;
+//   }
 
-  .pickItemDesc {
-    flex-basis: 75%;
-    padding: 0 25px;
-    overflow: hidden;
-  }
+//   .pickItemDesc {
+//     flex-basis: 75%;
+//     padding: 0 25px;
+//     overflow: hidden;
+//   }
 
-  .pickItemDescTitle {
-    font-size: 1.3rem;
-    padding: 10px 0 0;
-    margin: 0;
-    color: #444;
-  }
+//   .pickItemDescTitle {
+//     font-size: 1.3rem;
+//     padding: 10px 0 0;
+//     margin: 0;
+//     color: #444;
+//   }
 
-  .pickItemDescText {
-    display: block;
-    padding: 5px 0 0;
-    margin: 0;
-    color: #444;
-    line-height: 1.4rem;
-  }
-}
+//   .pickItemDescText {
+//     display: block;
+//     padding: 5px 0 0;
+//     margin: 0;
+//     color: #444;
+//     line-height: 1.4rem;
+//   }
+// }
 
-@media (min-width: 600px) and (max-width: 1050px) {
-  .pickList {
-    padding: 0;
-    margin: 10px 10px;
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-  }
+// @media (min-width: 600px) and (max-width: 1050px) {
+//   .pickList {
+//     padding: 0;
+//     margin: 10px 10px;
+//     border: 1px solid #e5e5e5;
+//     border-radius: 3px;
+//   }
 
-  .pickItem {
-    display: flex;
-    justify-content: space-between;
-    height: 150px;
-  }
+//   .pickItem {
+//     display: flex;
+//     justify-content: space-between;
+//     height: 150px;
+//   }
 
-  .pickItemImage {
-    margin: 7px auto;
-    height: auto;
-    object-fit: cover;
-    flex-basis: 25%;
-    max-width: 25%;
-  }
+//   .pickItemImage {
+//     margin: 7px auto;
+//     height: auto;
+//     object-fit: cover;
+//     flex-basis: 25%;
+//     max-width: 25%;
+//   }
 
-  .pickItemDesc {
-    flex-basis: 75%;
-    padding: 0 15px 5px;
-    overflow: hidden;
-  }
+//   .pickItemDesc {
+//     flex-basis: 75%;
+//     padding: 0 15px 5px;
+//     overflow: hidden;
+//   }
 
-  .pickItemDescTitle {
-    font-size: 1.2rem;
-    padding: 7px 0 0;
-    margin: 0;
-    color: #444;
-  }
+//   .pickItemDescTitle {
+//     font-size: 1.2rem;
+//     padding: 7px 0 0;
+//     margin: 0;
+//     color: #444;
+//   }
 
-  .pickItemDescText {
-    display: block;
-    padding: 5px 0 0;
-    margin: 0;
-    color: #444;
-    line-height: 1.4rem;
-  }
-}
+//   .pickItemDescText {
+//     display: block;
+//     padding: 5px 0 0;
+//     margin: 0;
+//     color: #444;
+//     line-height: 1.4rem;
+//   }
+// }
