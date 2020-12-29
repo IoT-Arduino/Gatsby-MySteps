@@ -57,4 +57,4 @@ Netlify
 
 ## DemoSite
 
-- [Replicated Gatsby Site](https://mysteps.netlify.com/)
+- [MySteps](https://mysteps.netlify.com/)
